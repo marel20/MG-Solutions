@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html > body{
+    background-color: #F0F8FF;
+    overflow-x: hidden;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visible{
+    display: flex !important;
+    visibility: visible !important;
+}
+
+.hidden{
+    display: none !important;
+    visibility: hidden !important;
+}
+/*----- Start Navbar Style -----*/
+.menu{
+    background-color: none;
+    height: 4.375rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 3000 !important;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 75rem;
+    height: 100%;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    background-color: none;
+    margin-top: 1%;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu_item--active{
+    --transform: rotate(0);
+    --background: none;
+}
+
+.menu_item--show{
+    background-color: none;
+}
+
+.menu_item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu_nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: none;
+}
+
+.menu_link{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 1.875rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: none;
+}
+
+.menu_link:hover{
+    color: #1c2e4cc0;
+}
+
+.menu_link::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background:#FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-out;
+}
+
+.menu_link:hover::before{
+    width: 100%;
+}
+
+.menu_arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: .1875rem;
+}
+
+.menu_link--inside{
+    padding: .9375rem 3.125rem .9375rem .625rem;
+}
+
+.menu_link--inside:hover{
+    color: #1c2e4cc0;
+}
+
+.menu_hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 .9375rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_img{
+    display: block;
+    width: 2.25rem;
+}
+
+nav.active{
+    background: linear-gradient(-45deg, #1C2E4C, #6CD0FF) !important;
+    box-shadow: 0 2px 10px #1c2e4cc0;
+}
+nav.active{
+  padding: 6px 0;
+}
+nav.active > ul > li > a {color: #FFFFFF; font-weight: bold;}
+nav.active > ul > li::before {background: #FFFFFF; font-weight: bold;}
+nav.active > ul > li > a:hover {color: rgba(255, 255, 255, 0.925); font-weight: bold;}
+
+nav.active .menu_nesting{
+    background: linear-gradient(-45deg, #1C2E4C, #6CD0FF) !important;
+    box-shadow: 0 2px 10px #1c2e4cc0;
+}
+
+
+/*----- End Navbar Style -----*/
+
+.btnWsp{
+    position: fixed;
+    bottom: 3.125rem;
+    right: 1.25rem;
+    z-index: 1500 !important;
+}
+
+.up{
+    position: fixed;
+    line-height: 64px;
+    bottom: 100px;
+    right: 30px;
+    text-align: center;
+    z-index: 100;
+}
+
+.headline{
+    background: linear-gradient(-45deg, #1C2E4C, #6CD0FF) !important;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    z-index: 0;
+}
+
+
+.container-fluid{
+    margin: auto !important;
+}
+
+
+.footer{
+    
+}
+
+
+
