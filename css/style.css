@@ -45,6 +45,11 @@ main{
     z-index: 3000 !important;
 }
 
+.menu_logo img{
+    width: 30%;
+    cursor: pointer;
+}
+
 .menu_container{
     display: flex;
     justify-content: space-between;
