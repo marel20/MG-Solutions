@@ -90,6 +90,21 @@ main{
     --transform: rotate(0);
 }
 
+.menu_item::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background:#FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.4s ease-out;
+}
+
+.menu_item:hover::before{
+    width: 100%;
+}
+
 .menu_nesting{
     list-style: none;
     transition: clip-path .3s;
@@ -115,21 +130,6 @@ main{
 
 .menu_link:hover{
     color: #1c2e4cc0;
-}
-
-.menu_link::before{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background:#FFFFFF;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    transition: 0.4s ease-out;
-}
-
-.menu_link:hover::before{
-    width: 100%;
 }
 
 .menu_arrow{
@@ -167,7 +167,6 @@ nav.active{
 }
 
 nav.active > ul > li > a {color: #FFFFFF; font-weight: bold;}
-nav.active > ul > li::before {background: #FFFFFF; font-weight: bold;}
 nav.active > ul > li > a:hover {color: rgba(255, 255, 255, 0.925); font-weight: bold;}
 
 nav.active .menu_nesting{
