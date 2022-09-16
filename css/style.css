@@ -7,13 +7,13 @@
 }
 
 html > body{
-    background-color: #F0F8FF;
     overflow-x: hidden;
 }
 
 main{
     width: 90%;
     margin: 0 auto;
+    background-color: #F0F8FF;
 }
 
 .row{
@@ -194,7 +194,7 @@ nav.active .menu_nesting{
 }
 
 .headline{
-    background: linear-gradient(-45deg, #1C2E4C, #6CD0FF) !important;
+    background: linear-gradient(-145deg, #1C2E4C, #6CD0FF) !important;
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -203,10 +203,24 @@ nav.active .menu_nesting{
     z-index: 0;
 }
 
-footer{
-    background-color: #1C2E4C;
-    height: 100px;
+main div h2{
+    text-align: center;
+    margin: 5% 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 50px;
 }
 
+form label{
+    color: #000000 !important;
+    letter-spacing: 2px !important;
+}
+
+form button{
+    background: linear-gradient(-60deg, #6CD0FF, #1C2E4C) !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
 
 
