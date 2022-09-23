@@ -47,21 +47,22 @@
 
 })();
 
-let btnUp = window.pageYOffset;
-window.onscroll = function() {
-    let displace = window.pageYOffset;
-    if (btnUp < displace){
-        this.document.getElementById('up').style.display = 'block';
-    } else{
-        document.getElementById('up').style.display = 'none';
-    }
+
+window.addEventListener('scroll', btnUp)
+
+function btnUp() {
+if(window.scrollY > nav.offsetHeight + 750) {
+    this.document.getElementById('up').style.display = 'block';
+} else {
+    document.getElementById('up').style.display = 'none';
+}
 }
 
 const nav = document.querySelector('nav')
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
-if(window.scrollY > nav.offsetHeight + 250) {
+if(window.scrollY > nav.offsetHeight + 550) {
     nav.classList.add('active')
 } else {
     nav.classList.remove('active')
