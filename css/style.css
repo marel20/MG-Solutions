@@ -222,7 +222,7 @@ h1{
 }
 .section h2{
     text-align: start;
-    margin: 50px 0;
+    margin: 15px 0;
     color: #000000;
     font-weight: bold;
     font-size: 38px;
@@ -235,7 +235,14 @@ h1{
 }
 
 .company{
-    width: 70%;
+    width: 60%;
+}
+
+.company article div{
+    border: 2px dashed #1ba326;
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 30px;
 }
 
 .content-line{
@@ -259,8 +266,8 @@ h1{
     width: 40%;
     padding: 55px;
     margin: 5px auto;
-    box-shadow: 3px 3px #1ba326;
-    border-radius: 15px 30px 5px 25px;
+    box-shadow: 2px 2px 4px  4px #1ba326;
+    border-radius: 8px 30px 3px 30px;
 }
 .card-services h3{
     color: #000000;
