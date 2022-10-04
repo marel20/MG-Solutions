@@ -8,12 +8,12 @@
 
 html > body{
     overflow-x: hidden;
+    background-color: #F0F8FF;
 }
 
 main{
     width: 90%;
     margin: 0 auto;
-    background-color: #F0F8FF;
 }
 
 .row{
@@ -203,12 +203,87 @@ nav.active .menu_nesting{
     z-index: 0;
 }
 
-main div h2{
+#company, #services, #projects, #contact{
+    padding: 2px;
+}
+
+h1{
     text-align: center;
-    margin: 5% 0;
+    font-weight: bold !important;
+    font-size: 50px !important;
+    color: #000000;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px auto;
+}
+.section h2{
+    text-align: start;
+    margin: 50px 0;
     color: #000000;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 38px;
+    padding: 2px;
+}
+
+.section p{
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.company{
+    width: 70%;
+}
+
+.content-line{
+    display: flex;
+    justify-content: center !important;
+}
+.line{
+    width: 2px;
+    height: 20vh;
+    background-color: #000000;
+}
+
+.services article{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.card-services{
+    width: 40%;
+    padding: 55px;
+    margin: 5px auto;
+    box-shadow: 3px 3px #1ba326;
+    border-radius: 15px 30px 5px 25px;
+}
+.card-services h3{
+    color: #000000;
+}
+
+.projects article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.projects article div, .projects article div img{
+    border-radius: 15px !important;
+}
+.projects article h3{
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin: 25px auto;
+}
+.projects article p{
+    color: #000000;
+    text-align: center;
 }
 
 form label{
@@ -221,6 +296,7 @@ form button{
     color: #000000 !important;
     font-weight: bold !important;
     font-size: 18px !important;
+    border-radius: 10px !important;
 }
 
 

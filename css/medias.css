@@ -60,6 +60,10 @@
         transition: height .3s;
     }
 
+    .menu_item:hover::before{
+        width: 0;
+    }
+
     nav.active .menu_nesting{
         background: none !important;
         box-shadow: none !important;
@@ -69,5 +73,19 @@
         width: 90%;
         margin-left: auto;
         border-left: .0625rem solid #FFFFFF;
+    }
+
+    .card-services{
+        width: 90%;
+    }
+
+    .projects article{
+        flex-direction: column !important; 
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .projects article h3{
+        font-size: 18px;
     }
 }
