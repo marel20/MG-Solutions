@@ -75,6 +75,10 @@
         border-left: .0625rem solid #FFFFFF;
     }
 
+    .company{
+        width: 95%;
+    }
+
     .card-services{
         width: 90%;
     }

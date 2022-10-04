@@ -239,7 +239,8 @@ h1{
 }
 
 .company article div{
-    border: 2px dashed #1ba326;
+    /* border: 2px dashed #1ba326; */
+    box-shadow: 3px 3px inset;
     border-radius: 15px;
     margin: 15px auto;
     padding: 30px;
