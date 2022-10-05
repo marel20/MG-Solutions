@@ -79,17 +79,18 @@
         width: 95%;
     }
 
-    .card-services{
+    .card-services, .card-projects{
         width: 90%;
     }
 
-    .projects article{
+
+    /* .projects article{
         flex-direction: column !important; 
         flex-wrap: nowrap;
         gap: 0;
-    }
+    } */
 
-    .projects article h3{
+    /* .projects article h3{
         font-size: 18px;
-    }
+    } */
 }

@@ -6,9 +6,11 @@
     text-decoration: none;
 }
 
-html > body{
+html {
     overflow-x: hidden;
     background-color: #F0F8FF;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 main{
@@ -239,10 +241,9 @@ h1{
 }
 
 .company article div{
-    /* border: 2px dashed #1ba326; */
     box-shadow: 3px 3px inset;
     border-radius: 15px;
-    margin: 15px auto;
+    margin: 65px auto;
     padding: 30px;
 }
 
@@ -276,23 +277,20 @@ h1{
 
 .projects article{
     display: flex;
+    flex-direction: row !important;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 70px;
 }
-.projects article div, .projects article div img{
-    border-radius: 15px !important;
+
+.card-projects{
+    width: 40%;
+    padding: 55px;
+    margin: 5px auto;
+    border: 2px solid #1ba326;
+    border-radius: 8px;
 }
-.projects article h3{
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-    margin: 25px auto;
-}
-.projects article p{
-    color: #000000;
-    text-align: center;
-}
+
 
 form label{
     color: #000000 !important;
