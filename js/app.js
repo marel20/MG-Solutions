@@ -62,9 +62,15 @@ const nav = document.querySelector('nav')
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
+    const logo = document.getElementById('logo');
+
 if(window.scrollY > nav.offsetHeight + 550) {
     nav.classList.add('active')
+    logo.classList.remove('hidden');
+    logo.classList.add('visible');
 } else {
-    nav.classList.remove('active')
+    nav.classList.remove('active');
+    logo.classList.remove('visible');
+    logo.classList.add('hidden');
 }
 }
