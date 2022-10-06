@@ -215,50 +215,65 @@
     </main>
 
     <section id="contact" class="section">
-      <form
-        method="POST"
-        action="../php/form.php"
-        style="width: 60%; margin: 5% auto"
-      >
-        <!-- Name input -->
-        <div class="form-outline mb-4">
-          <input type="text" id="name" name="name" class="form-control" />
-          <label class="form-label" for="name">Nombre y Apellido</label>
-        </div>
+      <div class="col-lg-8 col-md-6 mb-4 col-12">
+        <form
+          method="POST"
+          action="../php/form.php"
+          style="width: 60%; margin: 5% auto"
+        >
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="name" name="name" class="form-control" />
+            <label class="form-label" for="name">Nombre y Apellido</label>
+          </div>
 
-        <!-- Company input -->
-        <div class="form-outline mb-4">
-          <input
-            type="text"
-            id="business"
-            name="business"
-            class="form-control"
-          />
-          <label class="form-label" for="business">Empresa</label>
-        </div>
+          <!-- Company input -->
+          <div class="form-outline mb-4">
+            <input
+              type="text"
+              id="business"
+              name="business"
+              class="form-control"
+            />
+            <label class="form-label" for="business">Empresa</label>
+          </div>
 
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-          <input type="email" id="email" name="email" class="form-control" />
-          <label class="form-label" for="email">Email</label>
-        </div>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="email" name="email" class="form-control" />
+            <label class="form-label" for="email">Email</label>
+          </div>
 
-        <!-- Message input -->
-        <div class="form-outline mb-4">
-          <textarea
-            class="form-control"
-            id="message"
-            name="message"
-            rows="4"
-          ></textarea>
-          <label class="form-label" for="message">Mensaje</label>
-        </div>
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="4"
+            ></textarea>
+            <label class="form-label" for="message">Mensaje</label>
+          </div>
 
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">
-          Enviar
-        </button>
-      </form>
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">
+            Enviar
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 col-12 text-center">
+        <iframe
+          title="Noticias"
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FmgSolutions37&tabs=timeline&width=330&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="330"
+          height="450"
+          scrolling="yes"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        >
+        </iframe>
+      </div>
     </section>
 
     <div id="whatsapp" class="btnWsp">
