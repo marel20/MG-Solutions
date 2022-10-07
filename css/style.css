@@ -326,6 +326,7 @@ h1{
 
 #contact{
     flex-direction: row;
+    margin: 0 auto;
 }
 form label{
     color: #000000 !important;
