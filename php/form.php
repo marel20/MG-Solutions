@@ -10,7 +10,7 @@
 		echo  '<script language="javascript"> alert ("Su consulta fue enviada. Responderemos en breve."); window.location.href="../#contact.html" </script>';
 	} else {
         echo '<script language="javascript"> alert ("Ocurrio un error inesperado, intente de nuevo mas tarde"); window.location.href="../#contact.html" </script>';
-        }
+}
  ?>
 
 

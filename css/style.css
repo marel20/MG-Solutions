@@ -36,7 +36,7 @@ main{
 }
 /*----- Start Navbar Style -----*/
 .menu{
-    background-color: none;
+    background: linear-gradient(-145deg, #6CD0FF, #1C2E4C) !important;  
     height: 4.375rem;
     position: fixed;
     top: 0;
@@ -117,7 +117,7 @@ main{
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: none;
+    background: linear-gradient(-145deg, #6CD0FF, #1C2E4C) !important;  
 }
 
 .menu_link{
@@ -164,15 +164,15 @@ main{
     width: 2.25rem;
 }
 
-nav.active{
+nav{
     background: linear-gradient(-45deg, #6CD0FF, #1C2E4C) !important;
     box-shadow: 0 2px 10px #1c2e4cc0;
 }
 
-nav.active > ul > li > a {color: #FFFFFF; font-weight: bold;}
-nav.active > ul > li > a:hover {color: rgba(255, 255, 255, 0.925); font-weight: bold;}
+/* nav.active > ul > li > a {color: #FFFFFF; font-weight: bold;}
+nav.active > ul > li > a:hover {color: rgba(255, 255, 255, 0.925); font-weight: bold;} */
 
-nav.active .menu_nesting{
+nav .menu_nesting{
     background: linear-gradient(-45deg, #6CD0FF, #1C2E4C) !important;
     box-shadow: 0 2px 10px #1c2e4cc0;
 }
@@ -196,6 +196,11 @@ nav.active .menu_nesting{
     z-index: 100;
 }
 
+.repair{
+    display: flex;
+    margin: 0 auto;
+}
+
 .headline{
     background: linear-gradient(-145deg, #6CD0FF, #1C2E4C) !important;
     width: 100%;
@@ -205,9 +210,31 @@ nav.active .menu_nesting{
     background-size: cover !important;
     z-index: 0;
 }
+.headline img{
+    width: 40%;
+    transform: rotate(-5deg);
+}
+.headline h1{
+    position: fixed;
+    bottom: 15px;
+    right: 45px;
+    color: #FFFFFF;
+}
+.headline h6{
+    position: fixed;
+    bottom: 15px;
+    left: 45px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
 
 #company, #services, #projects, #contact{
     padding: 2px;
+}
+
+.page{
+    display: flex;
+    margin: 110px auto;
 }
 
 h1{
@@ -291,6 +318,10 @@ h1{
     border: 2px solid #cacaca;
     border-radius: 8px;
     box-shadow: 5px 5px #cacaca;
+}
+.card-projects img{
+    display: flex;
+    margin: 20px auto;
 }
 
 #contact{

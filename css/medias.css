@@ -83,6 +83,9 @@
         width: 90%;
     }
 
+    #contact{
+        flex-direction: column;
+    }
 
     /* .projects article{
         flex-direction: column !important; 
