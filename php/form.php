@@ -1,9 +1,9 @@
 <?php 
 	$nombre = $_POST['name'];
 	$email = $_POST['email'];
-	$Company = $_POST['Company'];
+	$bussines = $_POST['bussines'];
 	$affair = $_POST['affair'];
-	$mensaje = "Nombre: ".$nombre."\nCompania: ".$Company."\nEmail: ".$email."\nMensaje:\n\n".$_POST['message'];
+	$mensaje = "Nombre: ".$nombre."\nCompania: ".$bussines."\nEmail: ".$email."\nMensaje:\n\n".$_POST['message'];
 
 
 	if(mail('info@mgsolutions.com.ar', $affair, $mensaje)){

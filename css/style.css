@@ -4,13 +4,13 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 html {
     overflow-x: hidden;
     background-color: #F0F8FF;
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
 }
 
 main{
