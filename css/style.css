@@ -210,22 +210,48 @@ nav .menu_nesting{
     background-size: cover !important;
     z-index: 0;
 }
-.headline img{
-    width: 40%;
-    transform: rotate(-5deg);
+.logo-slogan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
 }
-.headline h1{
-    position: fixed;
-    bottom: 15px;
-    right: 45px;
+.logo-slogan img{
+    width: 50%;
+    transform: rotate(-15deg);
+}
+.logo-slogan img:hover{
+    transform: scale(1.2);
+}
+.logo-slogan p{
+    width: 37%;
+    font-weight: bold;
+    font-size: 30px;
     color: #FFFFFF;
 }
-.headline h6{
-    position: fixed;
-    bottom: 15px;
-    left: 45px;
-    font-size: 13px;
+
+.text-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: -150px 150px;
+    padding: 30px;
+    gap: 30px;
     color: #FFFFFF;
+}
+
+.text-home h1{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.text-home h6{
+    font-size: 14px;
+}
+.text-home h5{
+    font-size: 14px;
 }
 
 #company, #services, #projects, #contact{
@@ -348,6 +374,7 @@ form button{
 }
 
 
+/* projects style */
 
 .credit {
    position: absolute;
