@@ -74,3 +74,11 @@ if(window.scrollY > nav.offsetHeight + 750) {
 //     logo.classList.add('hidden');
 // }
 // }
+
+
+$(".option").click(function(){
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+    
+ });
+ 

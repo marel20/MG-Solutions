@@ -87,13 +87,29 @@
         flex-direction: column;
     }
 
-    /* .projects article{
-        flex-direction: column !important; 
-        flex-wrap: nowrap;
-        gap: 0;
-    } */
+    .options {
+        flex-wrap: wrap;
+        min-width: 20%;
+        max-width: 90%;
+        width: 100%;
+        height: 95vh;
+     }
+     .option{
+        width: 40% !important;
+        background-size: 85% !important;
+     } 
 
-    /* .projects article h3{
-        font-size: 18px;
-    } */
+     .active{
+        background-size: 80% !important;
+        width: 100% !important;
+        height: 40vh;
+        /* padding: 10px; */
+     }
+
+     .label{
+        flex-direction: column;
+        justify-content: flex-start;
+        bottom: 10px !important;
+        left: 0px !important;
+     }
 }

@@ -299,6 +299,9 @@ h1{
     box-shadow: 2px 2px 4px  4px #1ba326;
     border-radius: 8px 30px 3px 30px;
 }
+.card-services:hover{
+    transform: scale(1.1);
+}
 .card-services h3{
     color: #000000;
 }
@@ -311,18 +314,21 @@ h1{
     gap: 70px;
 }
 
-.card-projects{
+/* .card-projects{
     width: 40vw;
     padding: 55px;
     margin: 5px auto;
     border: 2px solid #cacaca;
     border-radius: 8px;
     box-shadow: 5px 5px #cacaca;
+    background-color: #1c2e4c93 !important;
+    color: #000000;
 }
+
 .card-projects img{
     display: flex;
     margin: 20px auto;
-}
+} */
 
 #contact{
     flex-direction: row;
@@ -341,4 +347,131 @@ form button{
     border-radius: 10px !important;
 }
 
+
+
+.credit {
+   position: absolute;
+   bottom:20px;
+   left:20px;
+   color:inherit;
+}
+
+.options {
+   display:flex;
+   flex-direction:row;
+   align-items:stretch;
+   overflow:hidden;
+   min-width:600px;
+   max-width:900px;
+   width:calc(100% - 100px);
+   height:400px;
+}
+      
+.option {
+  position: relative;
+  overflow:hidden;
+  min-width:60px;
+  margin:10px;
+  background: url(../assets/logo/tcc.png);
+  background-color: #1ba32644 !important;
+  background-size: auto !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer;
+  transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.option:nth-child(2){
+    background: url(../assets/logo/cautech.png);
+}
+.option:nth-child(3){
+    background: url(../assets/logo/lmr.png);
+}
+.option:nth-child(4){
+    background: url(../assets/logo/Supersol.png);
+}
+.option:nth-child(5){
+    background: url(../assets/logo/tecnorick.png);
+}
+
+.active {
+    flex-grow:10000;
+    transform:scale(1);
+    max-width:600px;
+    margin:0px;
+    border-radius:40px;
+    background-size: auto !important;
+}
+
+.label {
+    bottom:20px;
+    left:20px;
+}
+
+.shadow {
+    box-shadow:inset 0 -120px 120px -120px #000000, inset 0 -120px 120px -100px #000000;
+} 
+
+.info div {
+    left:0px;
+    opacity:1;
+}
+
+.option:not(.active){
+    border-radius: 10px;
+}
+
+.shadow {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:120px;
+    transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.label {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    position: absolute;
+    right:0px;
+    height:40px;
+    transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.icon a {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    min-width:90px;
+    max-width:90px;
+    gap: 10px;
+    /* margin-right: 250px; */
+    height:40px;
+    border-radius:100%;
+    color: #000000;
+}
+.info {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:10px;
+    color:#000000 !important;
+    white-space: pre;
+}
+.info div {
+    position: relative;
+    transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
+}
+.main {
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.sub {
+    transition-delay:.1s;
+}
+            
+         
+      
+   
 
