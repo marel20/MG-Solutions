@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&family=Nova+Round&display=swap');
+
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Nova Round', cursive; */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +13,8 @@
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
 }
 
 html {
@@ -50,7 +59,7 @@ main{
 .menu_logo img{
     width: 30%;
     cursor: pointer;
-    padding: 5px;
+    padding: 28px;
 }
 
 .menu_container{
@@ -202,7 +211,7 @@ nav .menu_nesting{
 }
 
 .headline{
-    background: linear-gradient(-145deg, #6CD0FF, #1C2E4C) !important;
+    background: linear-gradient(-145deg, #100a25dc, #090416) !important;
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -213,13 +222,13 @@ nav .menu_nesting{
 .logo-slogan{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     padding: 20px;
 }
 .logo-slogan img{
-    width: 50%;
+    width: 45%;
     transform: rotate(-15deg);
 }
 .logo-slogan img:hover{
@@ -246,12 +255,17 @@ nav .menu_nesting{
 .text-home h1{
     color: #FFFFFF;
     font-weight: bold;
+    font-family: 'Nova Round', cursive;
 }
 .text-home h6{
+    color: #FFFFFF;
     font-size: 14px;
+    font-family: 'Nova Round', cursive;
 }
 .text-home h5{
+    color: #FFFFFF;
     font-size: 14px;
+    font-family: 'Nova Round', cursive;
 }
 
 #company, #services, #projects, #contact{
@@ -268,6 +282,7 @@ h1{
     font-weight: bold !important;
     font-size: 50px !important;
     color: #000000;
+    font-family: 'Nova Round', cursive;
 }
 
 .section{
@@ -280,9 +295,10 @@ h1{
     text-align: start;
     margin: 15px 0;
     color: #000000;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 38px;
     padding: 2px;
+    font-family: 'Nova Round', cursive;
 }
 
 .section p{
@@ -292,10 +308,11 @@ h1{
 
 .company{
     width: 60%;
+    font-size: 18px;
 }
 
 .company article div{
-    box-shadow: 3px 3px inset;
+    box-shadow: 3px 3px inset #1C2E4C;
     border-radius: 15px;
     margin: 65px auto;
     padding: 30px;
@@ -330,6 +347,11 @@ h1{
 }
 .card-services h3{
     color: #000000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.card-services a{
+    color: #1ba326;
 }
 
 .projects article{

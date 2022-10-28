@@ -37,49 +37,10 @@
         gap: 30px;
         color: #FFFFFF;
     }
-    
 
-    /* .headline img{
-        width: 80%;
-        display: flex;
-        margin: 0 auto;
-        transform: rotate(0);
+    .menu_logo img{
+        padding: 0px;
     }
-    .headline img:hover{
-        transform: scale(1);
-    }
-    .headline p{
-        width: 90%;
-        position: relative;
-        top: 50px;
-        left: 30px;
-        font-weight: bold;
-        font-size: 25px;
-        color: #FFFFFF;
-    }
-    .headline h1{
-        position: relative;
-        top: 80px;
-        left: 10px;
-        color: #FFFFFF;
-        font-weight: bold;
-    }
-    .headline h6{
-        position: relative;
-        width: 90%;
-        top: 100px;
-        left: 100px;
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-    .headline h5{
-        position: relative;
-        width: 90%;
-        top: 120px;
-        left: 110px;
-        font-size: 16px;
-        color: #FFFFFF;
-    } */
 
     .menu_hamburguer{
         display: flex;
@@ -146,11 +107,16 @@
         border-left: .0625rem solid #FFFFFF;
     }
 
+    section h2{
+        font-size: 25px !important;
+    }
+    
     .company{
         width: 95%;
+        font-size: 15px;
     }
 
-    .card-services, .card-projects{
+    .card-services{
         width: 90%;
     }
 
