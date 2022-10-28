@@ -120,6 +120,14 @@
         width: 90%;
     }
 
+    .text-services{
+        flex-direction: column !important;
+    }
+
+    .text-services img{
+        width: 100%;
+    }
+
     #contact{
         flex-direction: column;
     }

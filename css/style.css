@@ -335,7 +335,31 @@ h1{
     gap: 70px;
 }
 
+.info-services{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.text-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+.text-services img{
+    width: 50%;
+}
+#designWeb, #apps, #sistemsOnline, #webInstitucional{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .card-services{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 40%;
     padding: 55px;
     margin: 5px auto;
