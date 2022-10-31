@@ -156,6 +156,8 @@
         <div class="line"></div>
       </div>
 
+      <!-- Services -->
+
       <section id="services" class="section services">
         <h2>¿De que manera podríamos ayudarte?</h2>
         <article>
@@ -167,7 +169,7 @@
               manera que pueda ser la forma de contacto con futuros clientes o
               usuarios.
             </p>
-            <a href="home.html#designWeb">Más info</a>
+            <a href="#designWeb">Más info</a>
           </div>
           <div class="card-services">
             <h3>Sistemas de gestión online</h3>
@@ -177,7 +179,8 @@
               sistemática, garantizar la fluidez de los procesos y lograr los
               resultados previstos.
             </p>
-            <a href="home.html#sistemsOnline">Más info</a>
+            <a class="visible" href="#sistemOnline">Más info</a>
+            <a class="hidden" href="#sistemOnlinee">Más info</a>
           </div>
           <div class="card-services">
             <h3>Aplicaciones Móviles</h3>
@@ -186,7 +189,7 @@
               tus ventas y mejorar la percepción de tu marca, no dudes en
               consultarnos.
             </p>
-            <a href="home.html#apps">Más info</a>
+            <a href="#apps">Más info</a>
           </div>
           <div class="card-services">
             <h3>Web corporativas e institucionales</h3>
@@ -195,13 +198,16 @@
               a través de internet. Nos posibilita mostrar lo que somos y lo que
               hacemos, captar usuarios para la página o para nuestros productos.
             </p>
-            <a href="home.html#webInstitucional">Más info</a>
+            <a class="visible" href="#webInstitucional">Más info</a>
+            <a class="hidden" href="#webInstitucionall">Más info</a>
           </div>
         </article>
+
+        <!-- Info-Services -->
         <article class="section info-services">
-          <div class="text-services" data-aos="fade-right">
+          <div id="designWeb" class="text-services" data-aos="fade-right">
             <img src="assets/img/diseño-web.jpg" alt="img-diseño-web" />
-            <div id="designWeb">
+            <div class="info-services">
               <h3>Diseño Web</h3>
               <p>
                 Hoy en día se dice que quien no está en internet no existe. Y en
@@ -221,8 +227,12 @@
               <a href="home.html#contact">Consultar por diseño web</a>
             </div>
           </div>
-          <div class="text-services visible" data-aos="fade-right">
-            <div id="sistemsOnline">
+          <div
+            id="sistemOnline"
+            class="text-services visible"
+            data-aos="fade-right"
+          >
+            <div class="info-services">
               <h3>Sistemas de gestión online</h3>
               <p>
                 Los sistemas de gestión pueden utilizarse en todos los ámbitos,
@@ -248,8 +258,12 @@
               alt="img-sistemas-gestion"
             />
           </div>
-          <div class="text-services hidden" data-aos="fade-right">
-            <div id="sistemsOnline">
+          <div
+            id="sistemOnlinee"
+            class="text-services hidden"
+            data-aos="fade-right"
+          >
+            <div class="info-services">
               <img
                 src="assets/img/sistemas-gestion.jpg"
                 alt="img-sistemas-gestion"
@@ -275,9 +289,9 @@
               >
             </div>
           </div>
-          <div class="text-services" data-aos="fade-right">
+          <div id="apps" class="text-services" data-aos="fade-right">
             <img src="assets/img/apps.jpg" alt="img-apps" />
-            <div id="apps">
+            <div class="info-services">
               <h3>Aplicaciones Móviles</h3>
               <p>
                 Si lo que necesitas es una aplicación móvil propia para tu
@@ -295,8 +309,12 @@
               <a href="home.html#contact">Consultar por mi app</a>
             </div>
           </div>
-          <div class="text-services visible" data-aos="fade-right">
-            <div id="webInstitucional">
+          <div
+            id="webInstitucional"
+            class="text-services visible"
+            data-aos="fade-right"
+          >
+            <div class="info-services">
               <h3>Web corporativas e institucionales</h3>
               <p>
                 Si lo que estás buscando es crear tu página web o renovar la que
@@ -321,8 +339,12 @@
               alt="img-web-corporativas"
             />
           </div>
-          <div class="text-services hidden" data-aos="fade-right">
-            <div id="webInstitucional">
+          <div
+            id="webInstitucionall"
+            class="text-services hidden"
+            data-aos="fade-right"
+          >
+            <div class="info-services">
               <img
                 src="assets/img/web-corporativas.jpg"
                 alt="img-web-corporativas"
@@ -350,23 +372,17 @@
         </article>
       </section>
 
-      <!-- <div class="col-lg-12 col-md-12 mb-8 col-12">
-        <img
-          class="repair col-lg-12 col-md-12 mb-8 col-12"
-          src="assets/img/repair.png"
-          alt="repair"
-        />
-      </div> -->
-
       <div class="content-line">
         <div class="line"></div>
       </div>
+
+      <!-- Projects -->
 
       <section id="projects" class="section projects">
         <h2>Instituciones/empresas que confiaron en nuestros servicios</h2>
         <article>
           <div class="options">
-            <div class="option active">
+            <div class="option active-projects">
               <div class="shadow"></div>
               <div class="label">
                 <div class="icon">
@@ -440,6 +456,8 @@
         </article>
       </section>
     </main>
+
+    <!-- Contact -->
 
     <section id="contact" class="section">
       <div class="col-lg-8 col-md-6 mb-4 col-12">
@@ -525,6 +543,8 @@
         <img src="assets/icons/arrowBlack.png" alt="arriba" />
       </a>
     </div>
+
+    <!-- Footer -->
 
     <footer class="text-center text-white" style="background-color: #d8d5d5">
       <!-- Grid container -->

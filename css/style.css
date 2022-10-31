@@ -234,7 +234,7 @@ nav .menu_nesting{
 .logo-slogan img:hover{
     transform: scale(1.2);
 }
-.logo-slogan p{
+.logo-slogan span{
     width: 37%;
     font-weight: bold;
     font-size: 30px;
@@ -350,11 +350,6 @@ h1{
 .text-services img{
     width: 50%;
 }
-#designWeb, #apps, #sistemsOnline, #webInstitucional{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
 .card-services{
     display: flex;
@@ -466,7 +461,7 @@ form button{
     background: url(../assets/logo/tecnorick.png);
 }
 
-.active {
+.active-projects {
     flex-grow:10000;
     transform:scale(1);
     max-width:600px;
@@ -489,7 +484,7 @@ form button{
     opacity:1;
 }
 
-.option:not(.active){
+.option:not(.active-projects){
     border-radius: 10px;
 }
 

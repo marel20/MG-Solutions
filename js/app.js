@@ -77,8 +77,8 @@ if(window.scrollY > nav.offsetHeight + 750) {
 
 
 $(".option").click(function(){
-    $(".option").removeClass("active");
-    $(this).addClass("active");
+    $(".option").removeClass("active-projects");
+    $(this).addClass("active-projects");
     
- });
+});
 

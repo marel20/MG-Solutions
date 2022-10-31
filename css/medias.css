@@ -23,11 +23,9 @@
     .logo-slogan img:hover{
         transform: scale(1);
     }
-    .logo-slogan p{
+    .logo-slogan span{
         width: 90%;
-        font-weight: bold;
         font-size: 25px;
-        color: #FFFFFF;
     }
     
     .text-home{
@@ -144,7 +142,7 @@
         background-size: 85% !important;
      } 
 
-     .active{
+     .active-projects{
         background-size: 80% !important;
         width: 100% !important;
         height: 40vh;

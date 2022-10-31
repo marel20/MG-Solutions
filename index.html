@@ -23,20 +23,51 @@
     <title>MG Solutions IT</title>
   </head>
   <body>
-    <a href="home.html">
-      <div class="headline">
-        <div class="logo-slogan">
-          <img src="assets/logo/logo.png" alt="logo-MG_Solutions" />
-          <p>Vos soñas el futuro de tu empresa, nosotros le damos click.</p>
+    <section>
+      <a href="home.html">
+        <div class="headline">
+          <div class="logo-slogan">
+            <img src="assets/logo/logo.png" alt="logo-MG_Solutions" />
+            <span id="text-typed"
+              >Vos soñas el futuro de tu empresa, nosotros le damos click.</span
+            >
+          </div>
+          <div class="text-home">
+            <h1>Bienvenidos</h1>
+            <h5>Para ingresar, presione en cualquier lado</h5>
+            <h6>Nuestra página aún sigue en desarrollo</h6>
+          </div>
         </div>
-        <div class="text-home">
-          <h1>Bienvenidos</h1>
-          <h5>Para ingresar, presione en cualquier lado</h5>
-          <h6>Nuestra página aún sigue en desarrollo</h6>
-        </div>
-      </div>
-    </a>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      </a>
+    </section>
+    <script>
+      //effect typewriter
+
+      let text = document.getElementById("text-typed");
+      let str = text.innerHTML;
+
+      text.innerHTML = "";
+
+      let speed = 150;
+      let i = 0;
+
+      function typeWriter() {
+        if (i < str.length) {
+          text.innerHTML += str.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      setTimeout(typeWriter, speed);
+    </script>
+    <!-- <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> -->
   </body>
 </html>
