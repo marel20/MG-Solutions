@@ -17,9 +17,9 @@ font-family: 'Nova Round', cursive; */
     color: #000000;
 }
 
-html {
+html, body, main {
     overflow-x: hidden;
-    background-color: #F0F8FF;
+    background-color: #F0F8FF !important;
 }
 
 main{
