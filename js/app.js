@@ -48,16 +48,27 @@
 })();
 
 
+// btn-up
+window.addEventListener('scroll', btnUp)
 
-let btnUp = window.pageYOffset;
-window.onscroll = function() {
-    let displace = window.pageYOffset;
-    if (btnUp < displace){
-        this.document.getElementById('up').style.display = 'block';
-    } else{
-        document.getElementById('up').style.display = 'none';
-    }
+function btnUp() {
+    const nav = document.getElementById('nav')
+if(window.scrollY > nav.offsetHeight + 2100) {
+    this.document.getElementById('up').style.display = 'block';
+} else {
+    document.getElementById('up').style.display = 'none';
 }
+}
+
+// let btnUp = window.pageYOffset;
+// window.onscroll = function() {
+//     let displace = window.pageYOffset;
+//     if (btnUp < displace){
+//         this.document.getElementById('up').style.display = 'block';
+//     } else{
+//         document.getElementById('up').style.display = 'none';
+//     }
+// }
 
 $(".option").click(function(){
     $(".option").removeClass("active-projects");
