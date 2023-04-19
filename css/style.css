@@ -198,7 +198,7 @@ nav .menu_nesting{
 
 .up{
     position: fixed;
-    line-height: 64px;
+    /* line-height: 64px; */
     bottom: 100px;
     right: 30px;
     text-align: center;
@@ -325,7 +325,7 @@ h1{
 .line{
     width: 2px;
     height: 20vh;
-    background-color: #000000;
+    background: #1C2E4C;
 }
 
 .services article{
